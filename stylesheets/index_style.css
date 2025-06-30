@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Afacad+Flux');
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/* Width */
+::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #525252;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #241c1c;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#title {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+#title h1 {
+    font-size: 40px;
+    margin: 30px;
+    font-weight: lighter;
+}
+
+.contact {
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px;
+    height: 100px;
+    width: 100px;
+}
+
+.app-image {
+    padding: 10px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border-radius: 10px;
+}
+
+.app-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.app {
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px;
+    height: 100px;
+    width: 100px;
+}
+
+#app-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.app {
+    margin: 40px auto 40px auto;
+    /*top right bottom left*/
+    padding: 15px;
+    border: 1px solid transparent;
+    text-align: center;
+    transform: scale(1);
+    transform-origin: center;
+    transition: border 200ms;
+    width: 650px;
+    height: 550px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.app-content-wrapper {
+    margin-bottom: auto;
+}
+
+.slideshow {
+    margin-top: auto;
+}
+
+.app:hover {
+    border: 1px solid white;
+    transition: border 200ms;
+}
+
+.app h2 {
+    font-weight: 50;
+    font-size: 40px;
+    margin: 1vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+.app p {
+    padding: 5px 15px 5px 15px;
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 18px;
+}
+
+
+.properties {
+    display: flex;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+.properties div {
+    width: 50px;
+    height: 50px;
+}
+
+.properties img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .app h2 {
+        font-weight: 50;
+        font-size: 30px;
+        margin: 1vw;
+    }
+
+    #title-image {
+        width: 100%;
+    }
+}
+
+#more-info {
+    position: absolute;
+    top: 90vh;
+    width: 100vw;
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 18px;
+}
+
+#more-info div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 800px) {
+    #more-info {
+        visibility: hidden;
+    }
+}
+
+
+#downSlide1 {
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    background: linear-gradient(to top, black, rgb(26, 26, 26));
+
+}
+
+#downSlide2 {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, black, rgb(17, 17, 17));
+    font-family: 'Afacad Flux', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    h3 {
+        color: white;
+        font-size: 50px;
+        margin: 0;
+        margin: 50px;
+        font-weight: 100;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        font-size: 28px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #downSlide1 {
+        height: auto;
+    }
+
+    #downSlide2 {
+        height: auto;
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-app {
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px;
+    height: 100px;
+    aspect-ratio: 1/1;
+}
+
+.contact-app:hover {
+    background-color: rgba(50, 50, 50, 1);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact-app-image {
+    padding: 10px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border-radius: 10px;
+}
+
+.contact-app-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
